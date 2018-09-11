@@ -1,0 +1,41 @@
+#site-wrapper {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction:column;
+  height: 100vh;
+}
+
+#site-wrapper > * {
+  flex:1 1 auto;
+}
+
+#title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.title-text {
+  position: relative;
+  left: -100%;
+}
+
+#title.title-text {
+  display: block;
+}
+
+#title h1 {
+  font-size: 34px;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+#title p {
+  margin-top: 0;
+  font-family: sans-serif;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
