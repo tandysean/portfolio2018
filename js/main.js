@@ -45,9 +45,12 @@
     const nav = createNav(navBox);
     const navList = document.querySelector('.navigation');
     const infoBox = document.querySelector('.info-box');
+    const circleIndicator = document.querySelector('.info-box span');
+
     Velocity(navBox, {height: '25px'}, 2500, 200);
     Velocity(navList, {'opacity': '1'}, {'delay': 3000}, 200)
-    Velocity(infoBox, {'opacity': '1'}, {'delay': 3750}, 200, 'easeIn')
+    Velocity(infoBox, {'opacity': '1'}, {'delay': 4000}, 200, 'easeIn')
+    Velocity(circleIndicator, {'opacity':'0'}, {'loop': true, 'delay': 1500 }, 700 );
   }
 
   function showContent() {

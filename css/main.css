@@ -76,7 +76,7 @@
   opacity: 0;
 }
 
-.info-box::before {
+.info-box span {
   content: '';
   width: 10px;
   height: 10px;
