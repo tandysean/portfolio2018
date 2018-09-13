@@ -1,29 +1,21 @@
 #site-wrapper {
   box-sizing: border-box;
-  display: flex;
-  flex-direction:column;
-  height: 100vh;
+  max-width: 1200px;
+  height: 90vh;
   font-family: Helvetica, sans-serif;
 }
 
-#site-wrapper > * {
-  flex:1 1 auto;
-}
-
 #title {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  position: absolute;
+  left: -100%;
+  top: 40%;
+  width: 100%;
 
 }
 
 .title-text {
-  position: absolute;
-  left: -100%;
-}
-
-#title.title-text {
-  display: block;
+  display: inline-block;
+  padding: 5px 5px 5px;
 }
 
 #title h1 {
@@ -58,7 +50,7 @@
   width: 100%;
   background-color: #1c1c1c;
   top: 75px;
-  left: 110%;
+  left: 200%;
 }
 
 .nav a {
@@ -68,8 +60,8 @@
 
 .info-box{
   position: absolute;
-  top: 45px;
-  right: 20px;
+  top: 56%;
+  right: 45px;
   font-family: monospace;
   text-transform: uppercase;
   color: limegreen;
@@ -110,6 +102,7 @@
 .main-content {
   display: none;
   opacity: 0;
+  margin-top: 100px;
 }
 
 .main-content h1{
