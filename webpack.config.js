@@ -34,6 +34,7 @@ module.exports = {
           }
         ]
     },
+    devtool: false,
     plugins: [
      new HtmlWebpackPlugin({
          template: `${__dirname}/index.html`,
@@ -43,7 +44,8 @@ module.exports = {
       filename: "[name].css",
       chunkFilename: "[id].css",
       hot: true
-      })
+      }),
+     new webpack.SourceMapDevToolPlugin({})
     ],
     devServer: {
       contentBase: './src',  //source of static assets
