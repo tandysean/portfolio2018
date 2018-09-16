@@ -1,3 +1,6 @@
+import 'velocity-animate';
+import './styles/styles.scss';
+
 (function () {
   const titleElement = document.querySelector('#title');
   const titleText = document.querySelector('#title h1');

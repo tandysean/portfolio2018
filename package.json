@@ -2,13 +2,32 @@
   "name": "velocity",
   "version": "1.0.0",
   "description": "my site",
-  "main": "index.js",
+  "main": "/js/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --history-api-fallback --inline --progress"
   },
   "keywords": [
     "portfolio"
   ],
   "author": "tandysean",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.0.1",
+    "babel-loader": "^8.0.2",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^1.0.0",
+    "extract-css-chunks-webpack-plugin": "^3.1.1",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.9.3",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.0",
+    "webpack": "^4.19.0",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.8"
+  },
+  "dependencies": {
+    "velocity-animate": "^1.5.2"
+  }
 }
