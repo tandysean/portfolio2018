@@ -1,6 +1,6 @@
 import 'velocity-animate';
 import './styles/styles.scss';
-import {animateLine, animateNav} from './Animations/animations';
+import {animateLine, animateNav, showContent} from './Animations/animations';
 import {appendNewElement} from './helpers';
 
 
@@ -10,18 +10,10 @@ import {appendNewElement} from './helpers';
   const paragraph = document.querySelector('#title p');
   const siteWrapper = document.querySelector('#site-wrapper');
 
-  /* animations */
-
-  function showContent() {
-    const mainContentSection = document.querySelector('.main-content');
-    setTimeout(() => mainContentSection.style.display='flex', 2000);
-    Velocity(mainContentSection, {'opacity': 1}, {'delay': 4000}, 200, 'easeIn');
-  }
   /* created Elements */
   /* create horizontal line and add to page */
 
   appendNewElement('div', 'horizontal-1', siteWrapper);
-  appendNewElement('div', 'nav', titleElement);
 
   /*positioning */
   /*title element */

@@ -12,6 +12,17 @@ function showContent() {
   Velocity(mainContentSection, {'opacity': 1}, {'delay': 4000}, 200, 'easeIn');
 }
 
+function animateTitle() {
+  const titleElement = document.querySelector('#title');
+  const titleText = document.querySelector('#title h1');
+  const paragraph = document.querySelector('#title p');
+
+  Velocity(titleElement, {'left': '0px'}, { 'delay': 500 }, 500, 'easeOut'), {'delay': 1000};
+  Velocity(titleElement, {'top': '0px'}, {'delay': 1000 }, 200, 'easeIn');
+  Velocity(titleText, {'font-size': '1.2em'}, {'delay': 2500}, 250);
+  Velocity(paragraph, {'font-size': '0.8em'}, {'delay': 2500}, 250);
+}
+
 function animateNav() {
   const navBox = document.querySelector('.nav');
   const navList = document.querySelector('.navigation');
@@ -24,4 +35,4 @@ function animateNav() {
   Velocity(circleIndicator, {'opacity':'0'}, {'loop': true, 'delay': 1500 }, 700 );
 }
 
-export {animateLine, animateNav, showContent}
+export {animateLine, animateNav, showContent, animateTitle}
