@@ -1,6 +1,6 @@
 import 'velocity-animate';
 import './styles/styles.scss';
-import {animateLine, animateNav, showContent, animateTitle} from './Animations/animations';
+import {animateLine, animateNav, showContent, animateTitle} from './Animations/intro';
 import {appendNewElement} from './helpers';
 
 

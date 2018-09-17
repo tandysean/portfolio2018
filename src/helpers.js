@@ -1,12 +1,7 @@
-
-function appendNewElement(el, className, rootElement) {
-  let base = document;
-  if (rootElement) {
-    base = rootElement
-  }
+function appendNewElement(el, className, rootElement=document) {
   let element = document.createElement(el);
   element.classList.add(className);
-  base.appendChild(element);
+  rootElement.appendChild(element);
 }
 
 export {appendNewElement}
