@@ -35,6 +35,11 @@ module.exports = {
         ]
     },
     devtool: false,
+    resolve: {
+    alias: {
+      Animations: `${__dirname}/src/animations`
+      }
+    },
     plugins: [
      new HtmlWebpackPlugin({
          template: `${__dirname}/index.html`,
