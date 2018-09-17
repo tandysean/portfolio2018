@@ -12,11 +12,7 @@ function showContent() {
   Velocity(mainContentSection, {'opacity': 1}, {'delay': 4000}, 200, 'easeIn');
 }
 
-function animateTitle() {
-  const titleElement = document.querySelector('#title');
-  const titleText = document.querySelector('#title h1');
-  const paragraph = document.querySelector('#title p');
-
+function animateTitle( titleElement, titleText, paragraph) {
   Velocity(titleElement, {'left': '0px'}, { 'delay': 500 }, 500, 'easeOut'), {'delay': 1000};
   Velocity(titleElement, {'top': '0px'}, {'delay': 1000 }, 200, 'easeIn');
   Velocity(titleText, {'font-size': '1.2em'}, {'delay': 2500}, 250);

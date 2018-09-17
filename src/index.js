@@ -1,6 +1,6 @@
 import 'velocity-animate';
 import './styles/styles.scss';
-import {animateLine, animateNav, showContent} from './Animations/animations';
+import {animateLine, animateNav, showContent, animateTitle} from './Animations/animations';
 import {appendNewElement} from './helpers';
 
 
@@ -10,26 +10,15 @@ import {appendNewElement} from './helpers';
   const paragraph = document.querySelector('#title p');
   const siteWrapper = document.querySelector('#site-wrapper');
 
-  /* created Elements */
-  /* create horizontal line and add to page */
-
+  /* initial decorative line */
   appendNewElement('div', 'horizontal-1', siteWrapper);
 
-  /*positioning */
-  /*title element */
-  Velocity(titleElement, {'left': '0px'}, { 'delay': 500 }, 500, 'easeOut'), {'delay': 1000};
-  Velocity(titleElement, {'top': '0px'}, {'delay': 1000 }, 200, 'easeIn');
-  Velocity(titleText, {'font-size': '1.2em'}, {'delay': 2500}, 250);
-  Velocity(paragraph, {'font-size': '0.8em'}, {'delay': 2500}, 250);
-
-
-
-  /*animate horizontalLine */
+  /*run intro animations*/
   document.addEventListener('DOMContentLoaded', (e) => {
       animateLine('horizontal-1', 2000);
+      animateTitle( titleElement, titleText, paragraph);
       animateLine('nav', 2500);
       animateNav();
       showContent()
   });
-
 })();
