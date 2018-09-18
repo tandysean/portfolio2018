@@ -2,7 +2,7 @@ import 'velocity-animate';
 import './styles/styles.scss';
 import React, {component} from 'react';
 import ReactDOM from "react-dom";
-import HomeView from './Components/HomeView';
+import App from './Components/App';
 import {animateLine, animateNav, showContent, animateTitle} from './Animations/intro';
 import {appendNewElement} from './helpers';
 
@@ -23,6 +23,6 @@ import {appendNewElement} from './helpers';
       animateTitle( titleElement, titleText, paragraph);
       animateLine('nav', 2500);
       animateNav();
-      ReactDOM.render(<HomeView />, wrapper);
+      ReactDOM.render(<App />, wrapper);
   });
 })();

@@ -1,7 +1,8 @@
 import React, {Component}from 'react';
 import { VelocityComponent } from 'velocity-react';
+import { hot } from 'react-hot-loader'
 
-export default class HomeView extends Component {
+export class HomeView extends Component {
   constructor(props) {
     super(props);
     this.state = {
