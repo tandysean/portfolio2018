@@ -37,7 +37,8 @@ module.exports = {
     devtool: false,
     resolve: {
     alias: {
-      Animations: `${__dirname}/src/animations`
+      Animations: `${__dirname}/src/animations`,
+      Components: `${__dirname}/src/components`
       }
     },
     plugins: [
